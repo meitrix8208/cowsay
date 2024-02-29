@@ -1,0 +1,14 @@
+##
+## The cow from a file called cow-n-horn, artist unknown.
+##
+$the_cow = <<EOC;
+  $thoughts
+   $thoughts    (__)               
+        $eyes\\               
+       ('') \\---------     
+        $tongue\\           \\    
+           |          |\\   
+           ||---(  )_|| *  
+           ||    UU  ||    
+           ==        ==    
+EOC

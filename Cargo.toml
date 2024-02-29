@@ -1,0 +1,10 @@
+[package]
+name = "cowsay"
+version = "0.0.1"
+
+
+[dependencies]
+clap ={version = "4.5.1",features = ["derive"]}
+rand = "~0.8.5"
+phf = { version = "0.11.2", features = ["macros"] }
+rust-embed = { version = "8.1.0", features = ["interpolate-folder-path"] }
