@@ -50,12 +50,10 @@ struct Args {
 }
 fn main() {
     let matches = Args::parse();
-
     let width = matches.width.unwrap_or(40);
-
     let wrap = !matches.nowrap;
-
     let mut message_vals = matches.message;
+
     if message_vals.is_empty() {
         message_vals.push("Hello, world!".to_string());
     }
@@ -68,10 +66,8 @@ fn main() {
     }
 
     let tongue = matches.tongue.unwrap_or(" ".to_string());
-
     let custom_eyes = matches.eyes.unwrap_or("default".to_string());
     let eyes = get_eyes(&custom_eyes);
-
     let think = matches.think;
 
     if matches.all {
@@ -82,13 +78,15 @@ fn main() {
             println!("{}", formatted_cow);
         }
     } else {
-        let cow = if matches.random {
+        let cow = 
+        if matches.random {
             let cows = list_cows();
             cows.choose(&mut rand::thread_rng()).unwrap().to_owned()
         } else {
             matches.cow.unwrap_or("default".to_string())
         };
         let formatted_cow = format_cow(&message, &cow, width, think, wrap, eyes, &tongue);
+        println!("{}", cow);
         println!("{}", formatted_cow);
     }
 }
