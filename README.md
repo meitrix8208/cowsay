@@ -1,3 +1,14 @@
-# cowsay in rust
+# Cowsay in rust
 
-basado en [este repositorio](https://github.com/ThisNekoGuy/rust-cowsay)
+```text
+ ________________
+< Cowsay in Rust >
+ ----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+               ||----w |
+                ||     ||
+```
+
+based on [this repository](https://github.com/ThisNekoGuy/rust-cowsay)
